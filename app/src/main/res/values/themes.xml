@@ -3,14 +3,15 @@
     <style name="Theme.Renters" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#320D6D</item>
-        <item name="colorPrimaryVariant">#FFBFB7</item>
+        <item name="colorPrimaryVariant">#FFD447</item>
         <item name="colorOnPrimary">#FFD447</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#700353</item>
-        <item name="colorSecondaryVariant">#FFBFB7</item>
+        <item name="colorSecondaryVariant">#FFD447</item>
         <item name="colorOnSecondary">#FFD447</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    
 </resources>
