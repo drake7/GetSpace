@@ -15,13 +15,14 @@ import android.widget.Toast;
 
 import com.example.renters.helper.CategoriesAdapter;
 import com.example.renters.helper.CategoriesHelperClass;
+import com.example.renters.helper.CategoryViewInterface;
 import com.example.renters.helper.FeaturedHelperClass;
 import com.example.renters.helper.MostViewedAdpater;
 import com.example.renters.helper.MostViewedHelperClass;
 
 import java.util.ArrayList;
 
-public class DrawerActivity extends AppCompatActivity {
+public class DrawerActivity extends AppCompatActivity implements CategoryViewInterface {
 
 
     RecyclerView featuredRecyclerView,mostViewedRecycler,categoriesRecycler;
@@ -65,16 +66,13 @@ public class DrawerActivity extends AppCompatActivity {
     private void featuredRecyclerView() {
         featuredRecyclerView.setHasFixedSize(true);
         featuredRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
-        ArrayList<FeaturedHelperClass> featuredLocation=new ArrayList<FeaturedHelperClass>();
-        featuredLocation.add(new FeaturedHelperClass(R.drawable.basement,"basement","images for the basement "));
-
-        featuredLocation.add(new FeaturedHelperClass(R.drawable.apartment,"apartment","images for the basement "));
-
-        featuredLocation.add(new FeaturedHelperClass(R.drawable.flats,"flats","images for the basement"));
-
-        featuredLocation.add(new FeaturedHelperClass(R.drawable.basement,"basement","images for the basement"));
-
+        ArrayList<FeaturedHelperClass> featuredLocation=new ArrayList<>();
+        featuredLocation.add(new FeaturedHelperClass(R.drawable.image5,"basement","images for the basement "));
+        featuredLocation.add(new FeaturedHelperClass(R.drawable.image2,"apartment","images for the basement "));
+        featuredLocation.add(new FeaturedHelperClass(R.drawable.image3,"flats","images for the basement"));
+        featuredLocation.add(new FeaturedHelperClass(R.drawable.image5,"basement","images for the basement"));
         adapter = new com.example.renters.helper.FeaturedAdapter(featuredLocation);
+
         featuredRecyclerView.setAdapter(adapter);
     }
     private void mostViewedRecycler() {
@@ -82,10 +80,10 @@ public class DrawerActivity extends AppCompatActivity {
         mostViewedRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.basement, "West's"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.flats, "Surrey"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.apartment, "J."));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.basement, "Vancouver"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image1, "West's"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image2, "Surrey"));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image3, "J."));
+        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.image4, "Vancouver"));
         adapter = new MostViewedAdpater(mostViewedLocations);
         mostViewedRecycler.setAdapter(adapter);
     }
@@ -102,8 +100,15 @@ public class DrawerActivity extends AppCompatActivity {
         categoriesHelperClasses.add(new CategoriesHelperClass(gradient3, R.drawable.basement, "Basement"));
         categoriesHelperClasses.add(new CategoriesHelperClass(gradient4, R.drawable.flats, "Flats"));
         categoriesRecycler.setHasFixedSize(true);
-        adapter = new CategoriesAdapter(categoriesHelperClasses);
+        adapter = new CategoriesAdapter(categoriesHelperClasses,this);
         categoriesRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         categoriesRecycler.setAdapter(adapter);
+    }
+
+    @Override
+    public void onItemClick(int postition) {
+
+        Intent intent = new Intent(DrawerActivity.this,PropertyScreen.class);
+        startActivity(intent);
     }
 }

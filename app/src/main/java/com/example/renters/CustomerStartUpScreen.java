@@ -42,7 +42,6 @@ public class CustomerStartUpScreen extends AppCompatActivity {
         setContentView(R.layout.activity_customer_start_up_screen);
         loginButton = findViewById(R.id.startUploginButton);
 
-        Toast.makeText(this, "ReachedOnCreate", Toast.LENGTH_LONG).show();
         //to land u to the login page
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
