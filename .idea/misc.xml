@@ -3,9 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.242" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/drawable/card1.xml" value="0.113" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/drawable/ic_launcher_background.xml" value="0.336" />
         <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/font/fonts.xml" value="0.2755208333333333" />
-        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/activity_customer_login.xml" value="0.264" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/font/muli_black.xml" value="0.13802083333333334" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/activity_customer_login.xml" value="0.25" />
         <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/activity_customer_start_up_screen.xml" value="0.4" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/activity_drawer.xml" value="0.264" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/activity_main.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/activity_main_screen.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/activity_property_dash_board.xml" value="0.264" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/activity_property_screen.xml" value="0.264" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/category_card_design.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/categorycarddesign.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/featured_card_design.xml" value="0.536" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/fragment_explore.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/fragment_first.xml" value="0.2212962962962963" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/fragment_search.xml" value="0.2212962962962963" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/menu_header.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/layout/most_viewed_properties.xml" value="0.2064814814814815" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/menu/bottm_nav_menu.xml" value="0.2212962962962963" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/menu/menu.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/deepa/AndroidStudioProjects/Renters/app/src/main/res/menu/top_nav_menu.xml" value="0.264" />
       </map>
     </option>
   </component>

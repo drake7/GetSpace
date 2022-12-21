@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group>
+    <item
+        android:id="@+id/nav_home"
+        android:title="HOME"
+        android:icon="@drawable/magoogle"></item>
+
+    <item
+        android:id="@+id/nav_home1"
+        android:title="PROFILE"
+        android:icon="@drawable/magoogle"></item>
+</group>
+    <item android:title="Profile">
+        <menu> <group>
+            <item
+                android:id="@+id/nav_home_in"
+                android:title="HOME"
+                android:icon="@drawable/magoogle"></item>
+
+            <item
+                android:id="@+id/nav_home1_in"
+                android:title="PROFILE"
+                android:icon="@drawable/magoogle"></item>
+        </group> </menu>
+    </item>
+</menu>

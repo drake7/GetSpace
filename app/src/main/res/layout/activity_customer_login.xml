@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background=""
+    android:background="#FFFFFF"
     android:padding="30dp"
     tools:context=".login.CustomerLogin">
     <LinearLayout
@@ -18,15 +18,16 @@
             android:layout_height="35dp"
             android:padding="5dp"
             android:src="@drawable/back50bold"></ImageView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login"
             android:layout_marginTop="50dp"
-            android:textColor="@color/black"
-            android:textSize="40sp"
+            android:fontFamily="@font/muli_black"
+            android:text="@string/login"
             android:textAllCaps="true"
-            android:fontFamily="@font/MuliBlack"></TextView>
+            android:textColor="@color/black"
+            android:textSize="40sp"></TextView>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +50,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/Muli"
+
+                    android:fontFamily="@font/muli_black"
                     android:inputType="text"
                     android:textColor="@color/black">
                 </com.google.android.material.textfield.TextInputEditText>
@@ -63,7 +65,7 @@
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidthFocused="2dp"
                 app:hintTextColor="@color/black"
-                app:startIconDrawable="@drawable/passwordBlack"
+                app:startIconDrawable="@drawable/passwordimage"
                 app:startIconTint="@color/black"
                 app:endIconMode="password_toggle"
                 app:endIconTint="@color/black"
@@ -71,7 +73,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/Muli"
+
+                    android:fontFamily="@font/muli_black"
                     android:textColor="@color/black"
                     android:inputType="textPassword">
                 </com.google.android.material.textfield.TextInputEditText>
@@ -81,27 +84,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
+
                 <CheckBox
+                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
-                    android:text="Remember me"
-                    android:buttonTint="@color/black"
-                    android:textColor="@color/black"
                     android:layout_centerVertical="true"
-                    android:layout_marginTop="10dp"></CheckBox>
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/black"
+
+                    android:fontFamily="@font/muli_black"
+                    android:text="Remember me"
+                    android:textColor="@color/black" />
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="forgot password?"
-                    android:background="#0000000"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    ></Button>
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/muli_black"
+                    android:text="forgot password?"></Button>
 
             </RelativeLayout>
 
             <Button
+                android:id="@+id/login_login_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
@@ -113,6 +121,7 @@
             </Button>
 
             <Button
+                android:id="@+id/login_createAccount_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Create Account"
