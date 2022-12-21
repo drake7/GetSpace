@@ -1,12 +1,15 @@
 package com.example.renters;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -19,16 +22,22 @@ import com.example.renters.helper.CategoryViewInterface;
 import com.example.renters.helper.FeaturedHelperClass;
 import com.example.renters.helper.MostViewedAdpater;
 import com.example.renters.helper.MostViewedHelperClass;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
-public class DrawerActivity extends AppCompatActivity implements CategoryViewInterface {
+public class DrawerActivity extends AppCompatActivity implements CategoryViewInterface, NavigationView.OnNavigationItemSelectedListener{
 
 
     RecyclerView featuredRecyclerView,mostViewedRecycler,categoriesRecycler;
     RecyclerView.Adapter adapter;
     private GradientDrawable gradient2,gradient1,gradient3,gradient4;
-    ImageView image1,image2,image3,image4;
+    ImageView image1,image2,image3,nav_opener;
+
+
+    //Drawer menu code
+    DrawerLayout  drawerLayout;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +63,24 @@ public class DrawerActivity extends AppCompatActivity implements CategoryViewInt
         {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
-        //
+        //Menu Hooks
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.navigation_view);
+        nav_opener = findViewById(R.id.nav_opener);
+
+        nav_opener.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawerLayout.open();
+            }
+        });
+
+        navigationView.bringToFront();
+        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
+
+
+
+
         featuredRecyclerView = findViewById(R.id.featured_recycler);
         mostViewedRecycler = findViewById(R.id.mv_recycler_view);
         categoriesRecycler = findViewById(R.id.category_recycler);
@@ -110,5 +136,10 @@ public class DrawerActivity extends AppCompatActivity implements CategoryViewInt
 
         Intent intent = new Intent(DrawerActivity.this,PropertyScreen.class);
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return true;
     }
 }

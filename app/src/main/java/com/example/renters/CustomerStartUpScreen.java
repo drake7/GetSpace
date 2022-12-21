@@ -50,12 +50,7 @@ public class CustomerStartUpScreen extends AppCompatActivity {
                 startActivity(i);
 
             }
-        });
-
-
-
-
-        //to land you to the sign up page
+        });//to land you to the sign up page
         signupButton = findViewById(R.id.startUpSignUpButton);
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +60,6 @@ public class CustomerStartUpScreen extends AppCompatActivity {
 
             }
         });
-
         try {
             //login for google
             gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
